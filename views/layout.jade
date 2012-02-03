@@ -11,6 +11,7 @@ html
         link(rel='stylesheet', href='/css/deck.core.css', type='text/css')
         link(rel='stylesheet', href='/css/deck.hash.css', type='text/css')
         link(rel='stylesheet', href='/css/deck.scale.css', type='text/css')
+        link(rel='stylesheet', href='/css/deck.goto.css', type='text/css')
         link(rel='stylesheet', href='/css/neon.css', type='text/css')
         link(rel='stylesheet', href='/css/horizontal-slide.css', type='text/css')
         script(src='/js/modernizr.custom.js')
@@ -18,9 +19,17 @@ html
         != body
     
         a.deck-permalink(href='.', title='Permalink to this slide') #
+
+        form.goto-form(action='.', method='get')
+            label(for='goto-slide') Go to slide:
+              input#goto-slide(type='text', name='slidenum', list='goto-datalist')
+              datalist#goto-datalist
+              input(type='submit', value='Go')
+
     
         script(src='/js/jquery-1.7.1.js')
         script(src='/js/deck.core.js')
         script(src='/js/deck.hash.js')
         script(src='/js/deck.scale.js')
+        script(src='/js/deck.goto.js')
         script(src='/js/site.js')
