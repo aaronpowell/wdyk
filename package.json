@@ -1,0 +1,8 @@
+{
+    "name": "wdyk-hosted-all-the-things",
+    "version": "1.0.0",
+    "dependencies": {
+        "express": ">=2.5.0",
+        "jade": ">=0.18.0"
+    }
+}
