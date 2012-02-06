@@ -5,5 +5,8 @@
         "express": ">=2.5.0",
         "jade": ">=0.18.0",
         "jasmine-node": ">=1.0.0"
-    }
+    },
+   "scripts": {
+        "test": "node tests.js"   
+   }
 }
